@@ -25,6 +25,41 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/* burger-menu */
+.header-burger {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #ddd;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+#menu-toggle {
+  display: none;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  right: -220px;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(6, 158, 218);
+  color: white;
+  padding-top: 50px;
+  z-index: 100;
+}
+.menu-link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+#menu-toggle:checked + .menu {
+  right: 0;
+}
+
 .red-button {
   display: inline-block;
   padding: 12px 24px;
